@@ -1,0 +1,27 @@
+{
+  "name": "hunt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check-jobs-stagehand": "tsx src/stagehand-monitor.ts",
+    "check-jobs-playwright": "tsx src/playwright-monitor.ts",
+    "check-jobs": "tsx src/check-jobs.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Justin Lee",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "@browserbasehq/stagehand": "^2.2.1",
+    "@types/nodemailer": "^6.4.17",
+    "nodemailer": "^7.0.3",
+    "playwright": "^1.52.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
