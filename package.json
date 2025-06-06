@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/retrospct/hunter.git"
   },
+  "packageManager": "pnpm@10.11.0",
   "main": "src/generic-job-monitor.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -28,20 +29,6 @@
     "monitor-with-details": "FETCH_JOB_DETAILS=true tsx src/stagehand-monitor.ts",
     "example": "tsx src/examples/multi-site-monitor-example.ts"
   },
-  "keywords": [
-    "job-monitoring",
-    "job-scraper",
-    "career-tracker",
-    "typescript",
-    "playwright",
-    "email-notifications",
-    "web-scraping",
-    "automation",
-    "xai",
-    "openai",
-    "anthropic",
-    "tech-jobs"
-  ],
   "dependencies": {
     "@browserbasehq/sdk": "^2.6.0",
     "@browserbasehq/stagehand": "^2.2.1",
@@ -55,5 +42,19 @@
     "@types/nodemailer": "^6.4.17",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3"
-  }
+  },
+  "keywords": [
+    "job-monitoring",
+    "job-scraper",
+    "career-tracker",
+    "typescript",
+    "playwright",
+    "email-notifications",
+    "web-scraping",
+    "automation",
+    "xai",
+    "openai",
+    "anthropic",
+    "tech-jobs"
+  ]
 }
