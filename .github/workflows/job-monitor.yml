@@ -1,0 +1,47 @@
+name: Job Monitor
+
+on:
+  schedule:
+    # Run every 6 hours at 00, 06, 12, 18 UTC
+    # - cron: '0 */6 * * *'
+    # Run four times daily during business hours
+    #(6AM, 9AM, 12PM, 4PM PDT = 12, 15, 18, 22 UTC)
+    - cron: '0 12,15,18,22 * * 1-5'
+  workflow_dispatch:  # Allow manual triggers
+
+jobs:
+  monitor-jobs:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '>=20'
+        cache: 'pnpm'
+        
+    - name: Install dependencies
+      run: pnpm install --frozen-lockfile
+      
+    - name: Run job monitor
+      env:
+        EMAIL_USER: ${{ secrets.EMAIL_USER }}
+        EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+        NOTIFICATION_EMAIL: ${{ secrets.NOTIFICATION_EMAIL }}
+        BROWSERBASE_API_KEY: ${{ secrets.BROWSERBASE_API_KEY }}
+        BROWSERBASE_PROJECT_ID: ${{ secrets.BROWSERBASE_PROJECT_ID }}
+        # FETCH_JOB_DETAILS: false # default is false, set to true to fetch job details
+      run: pnpm run check-jobs
+      
+    - name: Upload logs on failure
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: job-monitor-logs
+        path: |
+          *.log
+          logs/
+        retention-days: 7

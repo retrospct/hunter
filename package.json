@@ -1,7 +1,9 @@
 {
   "name": "hunter",
   "version": "1.0.0",
-  "description": "A powerful TypeScript-based job monitoring system that scrapes multiple tech company career pages and sends intelligent email notifications",
+  "description": "A powerful job monitoring system that scrapes multiple tech company career pages and sends intelligent email notifications",
+  "author": "Justin Lee <me@jlee.cool>",
+  "license": "MIT",
   "main": "src/generic-job-monitor.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -32,9 +34,6 @@
     "anthropic",
     "tech-jobs"
   ],
-  "author": "Justin Lee",
-  "license": "MIT",
-  "packageManager": "pnpm@10.11.0",
   "dependencies": {
     "@browserbasehq/sdk": "^2.6.0",
     "@browserbasehq/stagehand": "^2.2.1",
