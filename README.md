@@ -282,15 +282,21 @@ For automated cloud-based monitoring, deploy using GitHub Actions:
 
 ### 1. Repository Setup
 
-1. **Fork or create** your repository
-2. **Add repository secrets** in Settings → Secrets and variables → Actions:
-   ```
-   EMAIL_USER=your_gmail_address@gmail.com
-   EMAIL_PASS=your_gmail_app_password
-   NOTIFICATION_EMAIL=recipient@example.com
-   BROWSERBASE_API_KEY=your_browserbase_api_key
-   BROWSERBASE_PROJECT_ID=your_browserbase_project_id
-   ```
+**Fork or clone** this repository
+
+```bash
+git clone https://github.com/retrospct/hunt.git
+```
+
+**Add repository secrets** in Settings → Secrets and variables → Actions:
+
+```bash
+EMAIL_USER=your_email_address@example.com
+EMAIL_PASS=your_email_app_password
+NOTIFICATION_EMAIL=recipient@example.com
+BROWSERBASE_API_KEY=your_browserbase_api_key
+BROWSERBASE_PROJECT_ID=your_browserbase_project_id
+```
 
 ### 2. GitHub Actions Workflow
 
