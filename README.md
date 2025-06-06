@@ -1,5 +1,7 @@
 # Multi-Company Job Monitor
 
+**Note:** This repository is a template. Remember to replace placeholders like `<YOUR_GITHUB_USERNAME_OR_ORG>` with your actual GitHub username or organization and update contact methods in `CODE_OF_CONDUCT.md` and `SECURITY.md`.
+
 A powerful, configurable job monitoring system that scrapes multiple tech company career pages and sends intelligent email notifications for new job postings.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -28,7 +30,7 @@ A powerful, configurable job monitoring system that scrapes multiple tech compan
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/multi-company-job-monitor.git
+git clone https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor.git
 cd multi-company-job-monitor
 
 # Install dependencies
@@ -226,40 +228,16 @@ Found 5 new job posting(s) across 2 companies:
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how to get started:
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for detailed information on how to get started, including development setup, coding standards, and our pull request process.
 
-### Development Setup
+Key steps include:
+1. Forking the repository.
+2. Setting up your development environment (see `CONTRIBUTING.md` for details).
+3. Creating a feature branch.
+4. Making your changes, including tests if applicable.
+5. Submitting a Pull Request.
 
-```bash
-# Fork and clone the repository
-git clone https://github.com/yourusername/multi-company-job-monitor.git
-cd multi-company-job-monitor
-
-# Install dependencies
-npm install
-
-# Set up development environment
-cp .env.example .env
-# Configure your environment variables
-
-# Run in development mode
-npm run dev
-```
-
-### Adding New Features
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-### Code Style
-
-- Use TypeScript with strict type checking
-- Follow existing code patterns and naming conventions
-- Add proper error handling and logging
-- Update documentation for new features
+Please also refer to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## 🗓 Scheduling
 
@@ -457,9 +435,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🆘 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/multi-company-job-monitor/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/multi-company-job-monitor/discussions)
-- **Email**: support@yourproject.com
+- **Issues**: [GitHub Issues](https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor/discussions)
+- **Email**: (Consider setting up a dedicated email for support or using GitHub Discussions/Issues)
 
 ## 🗺 Roadmap
 
