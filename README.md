@@ -1,7 +1,5 @@
 # Multi-Company Job Monitor
 
-**Note:** This repository is a template. Remember to replace placeholders like `<YOUR_GITHUB_USERNAME_OR_ORG>` with your actual GitHub username or organization and update contact methods in `CODE_OF_CONDUCT.md` and `SECURITY.md`.
-
 A powerful, configurable job monitoring system that scrapes multiple tech company career pages and sends intelligent email notifications for new job postings.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -30,8 +28,8 @@ A powerful, configurable job monitoring system that scrapes multiple tech compan
 
 ```bash
 # Clone the repository
-git clone https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor.git
-cd multi-company-job-monitor
+git clone https://github.com/retrospct/hunter.git
+cd hunter
 
 # Install dependencies
 npm install
@@ -228,16 +226,16 @@ Found 5 new job posting(s) across 2 companies:
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for detailed information on how to get started, including development setup, coding standards, and our pull request process.
+We welcome contributions! Please see our [Contributing Guidelines](docs/CONTRIBUTING.md) for detailed information on how to get started, including development setup, coding standards, and our pull request process.
 
 Key steps include:
 1. Forking the repository.
-2. Setting up your development environment (see `CONTRIBUTING.md` for details).
+2. Setting up your development environment (see `docs/CONTRIBUTING.md` for details).
 3. Creating a feature branch.
 4. Making your changes, including tests if applicable.
 5. Submitting a Pull Request.
 
-Please also refer to our [Code of Conduct](CODE_OF_CONDUCT.md).
+Please also refer to our [Code of Conduct](docs/CODE_OF_CONDUCT.md).
 
 ## 🗓 Scheduling
 
@@ -423,7 +421,7 @@ Set up workflow monitoring:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [docs/LICENSE](docs/LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -435,8 +433,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🆘 Support
 
-- **Issues**: [GitHub Issues](https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor/discussions)
+- **Issues**: [GitHub Issues](https://github.com/retrospct/hunter/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/retrospct/hunter/discussions)
 - **Email**: (Consider setting up a dedicated email for support or using GitHub Discussions/Issues)
 
 ## 🗺 Roadmap
