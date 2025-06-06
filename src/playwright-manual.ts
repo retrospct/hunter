@@ -1,11 +1,12 @@
 import { readFile, writeFile } from 'fs/promises';
-import nodemailer from 'nodemailer';
+import * as nodemailer from 'nodemailer';
 import { Browser, chromium, Page } from 'playwright';
 
 interface JobPosting {
   title: string;
   url: string;
-  category: 'ai-research' | 'infrastructure' | 'software' | 'other';
+  category: string;
+  isNew?: boolean;
 }
 
 class XAIJobMonitor {
@@ -14,7 +15,23 @@ class XAIJobMonitor {
   private previousJobs: Set<string> = new Set();
   private readonly jobsFilePath = './xai-jobs.json';
 
+  private validateEnvironment(): void {
+    const required = [
+      'EMAIL_USER',
+      'EMAIL_PASS',
+      'NOTIFICATION_EMAIL'
+    ];
+
+    const missing = required.filter(key => !process.env[key]);
+    
+    if (missing.length > 0) {
+      throw new Error(`Missing required environment variables: ${missing.join(', ')}`);
+    }
+  }
+
   async init(): Promise<void> {
+    this.validateEnvironment();
+    
     this.browser = await chromium.launch({ 
       headless: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox']
