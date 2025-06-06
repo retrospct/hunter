@@ -5,12 +5,12 @@
   "author": "Justin Lee <me@jlee.cool>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor/issues"
+    "url": "https://github.com/retrospct/hunter/issues"
   },
-  "homepage": "https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor#readme",
+  "homepage": "https://github.com/retrospct/hunter#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor.git"
+    "url": "git+https://github.com/retrospct/hunter.git"
   },
   "main": "src/generic-job-monitor.ts",
   "scripts": {

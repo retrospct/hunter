@@ -6,6 +6,7 @@ First off, thank you for considering contributing to Multi-Company Job Monitor! 
 
 - [How Can I Contribute?](#how-can-i-contribute)
   - [Reporting Bugs](#reporting-bugs)
+  - [Reporting a Vulnerability](#reporting-a-vulnerability)
   - [Suggesting Enhancements](#suggesting-enhancements)
   - [Your First Code Contribution](#your-first-code-contribution)
   - [Pull Requests](#pull-requests)
@@ -19,7 +20,7 @@ First off, thank you for considering contributing to Multi-Company Job Monitor! 
 
 ### Reporting Bugs
 
-If you encounter a bug, please help us by reporting it. Good bug reports are extremely helpful! Before submitting a bug report, please check the existing [issues](https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor/issues) to see if someone else has already reported it.
+If you encounter a bug, please help us by reporting it. Good bug reports are extremely helpful! Before submitting a bug report, please check the existing [issues](https://github.com/retrospct/hunter/issues) to see if someone else has already reported it.
 
 When filing an issue, make sure to include:
 - A clear and descriptive title.
@@ -31,7 +32,7 @@ When filing an issue, make sure to include:
 
 ### Suggesting Enhancements
 
-We're open to suggestions for new features or improvements to existing ones. Feel free to open an [issue](https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor/issues) to discuss your ideas. Provide as much detail as possible, including:
+We're open to suggestions for new features or improvements to existing ones. Feel free to open an [issue](https://github.com/retrospct/hunter/issues) to discuss your ideas. Provide as much detail as possible, including:
 - A clear description of the enhancement.
 - The problem it solves or the value it adds.
 - Any potential implementation ideas (optional).
@@ -39,8 +40,8 @@ We're open to suggestions for new features or improvements to existing ones. Fee
 ### Your First Code Contribution
 
 Unsure where to begin contributing to Multi-Company Job Monitor? You can start by looking through `good first issue` and `help wanted` issues:
-- [Good first issues](https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor/labels/good%20first%20issue) - issues which should only require a few lines of code, and a test or two.
-- [Help wanted issues](https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor/labels/help%20wanted) - issues which should be a bit more involved than `good first issues`.
+- [Good first issues](https://github.com/retrospct/hunter/labels/good%20first%20issue) - issues which should only require a few lines of code, and a test or two.
+- [Help wanted issues](https://github.com/retrospct/hunter/labels/help%20wanted) - issues which should be a bit more involved than `good first issues`.
 
 ### Pull Requests
 
@@ -60,8 +61,8 @@ To get started with development:
 1.  **Fork** the repository.
 2.  **Clone** your fork:
     ```bash
-    git clone https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor.git
-    cd multi-company-job-monitor
+    git clone https://github.com/retrospct/hunter.git
+    cd hunter
     ```
 3.  **Install dependencies**:
     ```bash
@@ -98,6 +99,27 @@ This project and everyone participating in it is governed by the [Multi-Company 
 
 ## Questions?
 
-If you have any questions or need help, feel free to open an issue or start a discussion at https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor/discussions.
+If you have any questions or need help, feel free to open an issue or start a discussion at https://github.com/retrospct/hunter/discussions.
 
 Thank you for contributing!
+
+## Reporting a Vulnerability
+
+The Multi-Company Job Monitor team and community take all security vulnerabilities seriously. We appreciate your efforts to responsibly disclose your findings, and will make every effort to acknowledge your contributions.
+
+If you believe you have found a security vulnerability in Multi-Company Job Monitor, please report it to us privately. **Do not create a public GitHub issue.**
+
+Please email us at [me@jlee.cool](mailto:me@jlee.cool).
+
+When reporting a vulnerability, please include the following details:
+
+- A clear description of the vulnerability.
+- Steps to reproduce the vulnerability.
+- The potential impact of the vulnerability.
+- Any suggestions for a fix (optional).
+
+We will acknowledge receipt of your vulnerability report within 48 hours and will send you regular updates about our progress. We aim to address all valid reports as quickly as possible.
+
+Once a vulnerability is fixed, we will coordinate with you on public disclosure, if appropriate. We may also list your name in our acknowledgments if you agree.
+
+Thank you for helping keep Multi-Company Job Monitor secure.
