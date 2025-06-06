@@ -1,26 +1,51 @@
 {
-  "name": "hunt",
+  "name": "hunter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A powerful TypeScript-based job monitoring system that scrapes multiple tech company career pages and sends intelligent email notifications",
+  "main": "src/generic-job-monitor.ts",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "check-jobs": "tsx src/generic-job-monitor.ts",
     "check-jobs-stagehand": "tsx src/stagehand-monitor.ts",
     "check-jobs-playwright": "tsx src/playwright-monitor.ts",
-    "check-jobs": "tsx src/check-jobs.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "check-jobs-manual": "tsx src/generic-job-monitor.ts manual",
+    "check-jobs-legacy": "tsx src/check-jobs.ts",
+    "monitor-multi": "tsx src/stagehand-monitor.ts",
+    "monitor-ai": "ENABLED_SITES=xAI,OpenAI,Anthropic tsx src/stagehand-monitor.ts",
+    "monitor-all": "tsx src/stagehand-monitor.ts",
+    "monitor-with-details": "FETCH_JOB_DETAILS=true tsx src/stagehand-monitor.ts",
+    "example": "tsx src/examples/multi-site-monitor-example.ts"
   },
-  "keywords": [],
+  "keywords": [
+    "job-monitoring",
+    "job-scraper",
+    "career-tracker",
+    "typescript",
+    "playwright",
+    "email-notifications",
+    "web-scraping",
+    "automation",
+    "xai",
+    "openai",
+    "anthropic",
+    "tech-jobs"
+  ],
   "author": "Justin Lee",
-  "license": "ISC",
+  "license": "MIT",
   "packageManager": "pnpm@10.11.0",
   "dependencies": {
+    "@browserbasehq/sdk": "^2.6.0",
     "@browserbasehq/stagehand": "^2.2.1",
-    "@types/nodemailer": "^6.4.17",
     "nodemailer": "^7.0.3",
-    "playwright": "^1.52.0"
+    "playwright": "^1.52.0",
+    "playwright-core": "^1.52.0",
+    "zod": "^3.25.49"
   },
   "devDependencies": {
     "@types/node": "^22.15.29",
+    "@types/nodemailer": "^6.4.17",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3"
   }
