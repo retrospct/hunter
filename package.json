@@ -4,6 +4,14 @@
   "description": "A powerful job monitoring system that scrapes multiple tech company career pages and sends intelligent email notifications",
   "author": "Justin Lee <me@jlee.cool>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor/issues"
+  },
+  "homepage": "https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<YOUR_GITHUB_USERNAME_OR_ORG>/multi-company-job-monitor.git"
+  },
   "main": "src/generic-job-monitor.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
